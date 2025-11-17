@@ -16,6 +16,7 @@ def login():
     email = request.json.get('email', None)
     password = request.json.get('password', None)
 
+    print(email, password)
     return jsonify({'msg': 'You are logged in!'}), 200
 
 
